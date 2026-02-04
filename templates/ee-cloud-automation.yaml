@@ -133,6 +133,7 @@ spec:
           type: string
           format: data-url
           ui:field: FileUploadPicker
+          ui:placeholder: Paste the full content of your requirements.yml file here. Alternatively, upload YAML file.
         specifyRequirements:
           title: Specify additional Python requirements and System packages
           type: boolean
@@ -162,6 +163,7 @@ spec:
                   title: Pick a file with Python requirements
                   description: Upload a requirements.txt file with python package details
                   ui:field: FileUploadPicker
+                  ui:placeholder: Paste the full content of your requirements.txt file here. Alternatively, upload TXT file.
                 systemPackages:
                   title: Additional System Packages
                   type: array
@@ -180,6 +182,7 @@ spec:
                   title: Pick a file with system packages
                   description: Upload a bindep.txt file with system package details
                   ui:field: FileUploadPicker
+                  ui:placeholder: Paste the full content of your bindep.txt file here. Alternatively, upload TXT file.
             - properties:
                 specifyRequirements:
                   const: false
