@@ -64,6 +64,7 @@ spec:
     # Step 2: Ansible Collections
     - title: Collections
       description: Add collections to be included in your execution environment definition file (optional).
+      properties:
         collections:
           title: Ansible Collections
           type: array
