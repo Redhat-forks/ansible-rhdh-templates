@@ -65,23 +65,6 @@ spec:
     - title: Collections
       description: Add collections to be included in your execution environment definition file (optional).
       properties:
-        popularCollections:
-          title: Add Popular Collections
-          type: array
-          default: ["amazon.aws", "amazon.ai", "azure.azcollection", "google.cloud"]
-          items:
-            type: string
-            enum:
-              - 'amazon.aws'
-              - 'amazon.ai'
-              - 'azure.azcollection'
-              - 'google.cloud'
-              - 'ansible.utils'
-              - 'community.general'
-          uniqueItems: true
-          ui:widget: checkboxes
-          ui:options:
-            layout: horizontal
         collections:
           title: Ansible Collections
           type: array
